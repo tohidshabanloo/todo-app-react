@@ -1,0 +1,16 @@
+.todosList {
+  width: 70%;
+  margin: auto;
+  padding: 24px;
+  border-radius: 4px;
+  box-shadow: 0 0 6px #ccc;
+  text-align: left;
+
+  .todo {
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+}

@@ -2,9 +2,8 @@ import { useState } from "react";
 import "./AddTodo.scss";
 import { v4 as uuid } from "uuid";
 
-const AddTodo = () => {
+const AddTodo = ({ todoList, setTodoList }) => {
   const [inputValue, setInputValue] = useState("");
-  const [todoList, setTodoList] = useState([]);
 
   const addTodo = () => {
     const newTodo = { id: uuid(), text: inputValue };
@@ -13,7 +12,7 @@ const AddTodo = () => {
     setInputValue("");
   };
 
-  console.log(todoList);
+  
 
   return (
     <div className="add-todo">

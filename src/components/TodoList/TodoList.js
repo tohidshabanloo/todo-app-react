@@ -16,7 +16,13 @@ const TodoList = ({ todoList, setTodoList }) => {
           >
             {i + 1} .{item.text}
           </span>
-          <button onClick={() => handleCompelete(item.id)}>
+          <button
+            onClick={() => handleCompelete(item.id)}
+            style={{
+              backgroundColor: item.completed ? "yellow" : "red",
+              color: item.completed ? "black" : "white",
+            }}
+          >
             {item.completed ? "Undone" : "Done"}
           </button>
         </div>

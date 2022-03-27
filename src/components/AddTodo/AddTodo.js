@@ -6,6 +6,7 @@ const AddTodo = ({ todoList, setTodoList }) => {
   const [inputValue, setInputValue] = useState("");
 
   const addTodo = () => {
+    if (!inputValue.length) return; /*اگه اینپوت خالی بود همینجا وایستا!*/
     const newTodo = { id: uuid(), text: inputValue, completed: false };
     const updatedTodoList = [...todoList, newTodo];
     setTodoList(updatedTodoList);

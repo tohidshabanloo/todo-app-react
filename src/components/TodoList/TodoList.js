@@ -3,7 +3,7 @@ import "./TodoList.scss";
 const TodoList = ({ todoList, setTodoList }) => {
   const handleCompelete = (id) => {
     const updatedTodos = todoList.map((item) =>
-      item.id === id ? { ...item, completed: true } : item
+      item.id === id ? { ...item, completed: !item.completed } : item
     );
     setTodoList(updatedTodos);
   };
@@ -16,7 +16,9 @@ const TodoList = ({ todoList, setTodoList }) => {
           >
             {i + 1} .{item.text}
           </span>
-          <button onClick={() => handleCompelete(item.id)}>Done</button>
+          <button onClick={() => handleCompelete(item.id)}>
+            {item.completed ? "Undone" : "Done"}
+          </button>
         </div>
       ))}
     </div>

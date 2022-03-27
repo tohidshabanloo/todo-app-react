@@ -16,7 +16,7 @@ const TodoList = ({ todoList, setTodoList }) => {
           >
             {i + 1} .{item.text}
           </span>
-          <button onClick={() => handleCompelete(item.id)}>Delete</button>
+          <button onClick={() => handleCompelete(item.id)}>Done</button>
         </div>
       ))}
     </div>

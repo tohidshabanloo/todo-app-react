@@ -1,6 +1,5 @@
 .todosList {
   width: 70%;
-  height: fit-content;
   margin: auto;
   padding: 24px;
   border-radius: 4px;
@@ -12,13 +11,24 @@
     height: fit-content;
     border: 1px solid #ccc;
     margin-bottom: 8px;
-    padding: 12px;
+    padding: 20px 12px;
     border-radius: 4px;
     font-weight: bold;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+
+    .removeIcon {
+      position: absolute;
+      top: 0px;
+      right: 5px;
+      cursor: pointer;
+    }
+  }
+  .todospan {
+    align-self: stretch;
   }
 
   button {
@@ -28,6 +38,7 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    padding: 4px 8px;
+    padding: 4px 10px;
+    margin-right: 10px;
   }
 }

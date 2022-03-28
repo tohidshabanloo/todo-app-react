@@ -10,8 +10,10 @@ const TodoList = ({ todoList, setTodoList }) => {
   return (
     <div className="todosList ">
       {todoList.map((item, i) => (
-        <div key={item.id} className="todo ">
+        <div key={item.id} className="todo">
+          <span className="removeIcon">X</span>
           <span
+            className="todospan"
             style={{ textDecoration: item.completed ? "line-through" : "" }}
           >
             {i + 1} .{item.text}
@@ -23,7 +25,7 @@ const TodoList = ({ todoList, setTodoList }) => {
               color: item.completed ? "black" : "white",
             }}
           >
-            {item.completed ? "Undone" : "Done"}
+            {item.completed ? "Undone" : "iDone"}
           </button>
         </div>
       ))}

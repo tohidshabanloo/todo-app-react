@@ -7,11 +7,18 @@ const TodoList = ({ todoList, setTodoList }) => {
     );
     setTodoList(updatedTodos);
   };
+
+  const removeTodo = (id) => {
+    const updatedTodos = todoList.filter((item) => item.id !== id);
+    setTodoList(updatedTodos);
+  };
   return (
     <div className="todosList ">
       {todoList.map((item, i) => (
         <div key={item.id} className="todo">
-          <span className="removeIcon">X</span>
+          <span className="removeIcon" onClick={() => removeTodo(item.id)}>
+            X
+          </span>
           <span
             className="todospan"
             style={{ textDecoration: item.completed ? "line-through" : "" }}

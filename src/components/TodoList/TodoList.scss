@@ -6,6 +6,7 @@
   box-shadow: 0 0 6px #ccc;
   text-align: left;
   background-color: #00bf6f;
+  direction: rtl;
 
   .todo {
     height: fit-content;
@@ -40,5 +41,6 @@
     cursor: pointer;
     padding: 4px 10px;
     margin-right: 10px;
+    font-family: iranyekanwebboldfanum;
   }
 }

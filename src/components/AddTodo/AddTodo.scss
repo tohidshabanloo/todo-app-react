@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-around;
   margin: 60px auto 60px auto;
+  direction: rtl;
   button {
     background-color: #00bf6f;
     padding: 5px 16px;
@@ -19,5 +20,6 @@
     padding: 4px 16px;
     outline: none;
     width: 100%;
+    font-family: iranyekanwebboldfanum;
   }
 }

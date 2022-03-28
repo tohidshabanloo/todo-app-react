@@ -1,7 +1,7 @@
 import "./Header.css";
 
 const Header = () => {
-  return <div className="header">Todo App</div>;
+  return <div className="header">برنامه ریزی روزانه</div>;
 };
 
 export default Header;

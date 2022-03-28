@@ -32,7 +32,7 @@ const TodoList = ({ todoList, setTodoList }) => {
               color: item.completed ? "black" : "white",
             }}
           >
-            {item.completed ? "Undone" : "Done"}
+            {item.completed ? "انجام نشده" : "انجام شده"}
           </button>
         </div>
       ))}

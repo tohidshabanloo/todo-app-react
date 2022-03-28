@@ -2,9 +2,9 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <div className="link">
-      Made by{" "}
+      توسط{" "}
       <a href="https://www.tohidsh.com" target="_blank">
-        Tohid Shabanloo
+        توحید شعبانلو
       </a>
     </div>
   );

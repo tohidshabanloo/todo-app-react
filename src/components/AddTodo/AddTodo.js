@@ -15,13 +15,13 @@ const AddTodo = ({ todoList, setTodoList }) => {
 
   return (
     <div className="add-todo">
-      <button onClick={addTodo}> + </button>
       <input
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
         type="text"
-        placeholder="add new todo..."
+        placeholder="تسک جدید بنویسید ..."
       ></input>
+      <button onClick={addTodo}> + </button>
     </div>
   );
 };
